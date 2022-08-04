@@ -1,0 +1,1690 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+body {
+  overflow-x: hidden; }
+
+.Paje1 {
+  width: 100%;
+  height: 10vh; }
+  .Paje1 .containerr {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Paje1/header/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .Paje1 .header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+    .Paje1 .header .header__left {
+      width: 15%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .Paje1 .header .header__left .logo {
+        width: 100.83px;
+        height: 49px; }
+    .Paje1 .header .header__upprostred {
+      width: 65%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #333333; }
+      .Paje1 .header .header__upprostred .header__box {
+        display: flex;
+        align-items: center;
+        margin: 35px; }
+        .Paje1 .header .header__upprostred .header__box .header__kolo {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #ACC7E8; }
+        .Paje1 .header .header__upprostred .header__box .header__kolo:hover {
+          filter: hue-rotate(-0.25turn); }
+        .Paje1 .header .header__upprostred .header__box .header__text {
+          margin-left: 5px;
+          display: inline-block;
+          position: relative;
+          margin-block: 2px;
+          animation-name: textinda;
+          animation-duration: 4s;
+          animation-iteration-count: 1; }
+        .Paje1 .header .header__upprostred .header__box .header__text::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: #d6ebff;
+          border-radius: 4px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform .25s ease; }
+        .Paje1 .header .header__upprostred .header__box .header__text:hover::after {
+          transform: scaleX(1); }
+    .Paje1 .header .header__right {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .Paje1 .header .header__right .header__phone-box {
+        display: flex;
+        align-items: center; }
+        .Paje1 .header .header__right .header__phone-box .header__phone-img {
+          width: 15px;
+          height: 15px; }
+        .Paje1 .header .header__right .header__phone-box .header__phone-img:hover {
+          filter: hue-rotate(-0.25turn); }
+        .Paje1 .header .header__right .header__phone-box .text__header-phone {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          position: relative;
+          top: 8px;
+          left: 5px;
+          color: #333333; }
+
+.footer__phone {
+  display: none; }
+
+.header__phoneBoxPhone {
+  display: none; }
+
+.header__text1 {
+  position: relative;
+  top: 10px; }
+
+.header__box {
+  display: flex;
+  align-items: center;
+  margin: 35px; }
+
+.header__kolo {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ACC7E8; }
+
+.header__text {
+  margin-left: 5px;
+  display: inline-block;
+  position: relative;
+  margin-block: 2px;
+  animation-name: textinda;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333; }
+
+.Menu__bootstrap {
+  display: none;
+  position: relative;
+  bottom: 2px;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px; }
+
+.header__text1 {
+  display: none; }
+
+.btn-close {
+  position: relative;
+  bottom: 100px; }
+
+.offcanvas {
+  width: 500px; }
+
+.Paje2 {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px; }
+  .Paje2 .Paje2__titelMain {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ACC7E8;
+    animation-name: paje2__titellww;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    perspective: 1px; }
+@keyframes paje2__titellww {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 0.1;
+    position: relative;
+    right: 50px; }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0; } }
+    .Paje2 .Paje2__titelMain .Paje2__textTitel {
+      font-size: 14px;
+      line-height: 17px;
+      color: #777777; }
+  .Paje2 .Paje2__box {
+    width: 100%;
+    height: 180px;
+    background: #EEF6F9;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex; }
+    .Paje2 .Paje2__box .Paje2__box-photo {
+      width: 15%;
+      height: 100%;
+      padding-left: 40px;
+      display: flex;
+      align-items: center; }
+      .Paje2 .Paje2__box .Paje2__box-photo .Paje2__mainBox-photo {
+        width: 100px;
+        height: 100px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: hue-rotate(0);
+        cursor: pointer;
+        transition: 1s;
+        animation-name: boxKK;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        perspective: 1px; }
+@keyframes boxKK {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 0.1;
+    position: relative;
+    right: 50px; }
+  100% {
+    opacity: 1;
+    position: relative;
+    right: 0; } }
+      .Paje2 .Paje2__box .Paje2__box-photo .Paje2__mainBox-photo:hover {
+        filter: hue-rotate(-0.25turn);
+        transition: 0.4s; }
+    .Paje2 .Paje2__box .Paje2__box-text {
+      width: 85%;
+      height: 100%;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      right: 30px; }
+      .Paje2 .Paje2__box .Paje2__box-text .Bissets__main {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #3F4447;
+        animation-name: bissetsMain;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        perspective: 1px; }
+@keyframes bissetsMain {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 0.1;
+    position: relative;
+    left: 100px; }
+  100% {
+    opacity: 1;
+    position: relative;
+    left: 0; } }
+      .Paje2 .Paje2__box .Paje2__box-text .Bissets__titel {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #777777;
+        animation-name: bissetsMain;
+        animation-duration: 4s;
+        animation-iteration-count: 1; }
+        .Downsss{
+          visibility: collapse;
+        }
+.Paje3 {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  position: relative;
+  bottom: 40px; }
+  .Paje3 .Paje3__upprostred {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    scroll-behavior: smooth; }
+    .Paje3 .Paje3__upprostred .ver {
+      width: 100%; }
+    .Paje3 .Paje3__upprostred .nic {
+      width: 100%; }
+    .Paje3 .Paje3__upprostred .top {
+      width: 100%; }
+    .Paje3 .Paje3__upprostred .down {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .Paje3 .Paje3__upprostred .down .Paje3__downBtn {
+        width: 149px;
+        height: 43px;
+        border: none;
+        color: #ffff;
+        background-color: #15978B;
+        border-radius: 20px;
+        position: relative;
+        top: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s; }
+      .Paje3 .Paje3__upprostred .down .Paje3__downBtn:hover {
+        color: #15978B;
+        background-color: transparent;
+        border: 1px solid #15978B;
+        transition: 0.4s; }
+      .Paje3 .Paje3__upprostred .down .Paje3__down {
+        width: 50px;
+        height: 50px; }
+      .Paje3 .Paje3__upprostred .down .Paje3__down1 {
+        width: 50px;
+        height: 50px;
+        transform: rotate(180deg);
+        margin-top: 18px; }
+      .Paje3 .Paje3__upprostred .down .Paje3__down2 {
+        width: 50px;
+        height: 50px;
+        transform: rotate(180deg);
+        position: relative;
+        top: 40px; }
+    .Paje3 .Paje3__upprostred .Paje3__big-box {
+      width: 100%;
+      height: 312px;
+      background: #FFFFFF;
+      border: 1px solid #D8D8D8;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      display: flex;
+      margin-top: 35px; }
+      .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+          width: 393px;
+          height: 266px;
+          border-radius: 5px; }
+      .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+        width: 75%;
+        height: 100%;
+        padding-left: 60px;
+        padding-right: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 39px;
+          color: #333333; }
+        .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__description {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #777777; }
+        .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__btn {
+          width: 204px;
+          height: 59px;
+          border: none;
+          border-radius: 20px;
+          background-color: #98BAB7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+          margin-top: 30px;
+          cursor: pointer;
+          transition: 1s; }
+        .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__btn:hover {
+          border: 1px solid #98BAB7;
+          background-color: transparent;
+          transition: 0.4s;
+          color: #A7DCD7; }
+  .Paje3 .Paje3__upprostred::-webkit-scrollbar {
+    width: 0; }
+
+.Paje4 {
+  width: 100%;
+  height: 150px; }
+
+footer {
+  width: 100%;
+  height: 35vh;
+  background-color: #E8F4F4;
+  display: flex; }
+  footer .foooter__leaft {
+    width: 25%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 120px; }
+    footer .foooter__leaft .left__sociable-box {
+      width: 150px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      margin-top: 35px; }
+      footer .foooter__leaft .left__sociable-box .sociable__keyframe:hover {
+        filter: hue-rotate(190deg);
+        transition: 0.5s; }
+      footer .foooter__leaft .left__sociable-box .footer__sociable-instagram {
+        margin-left: 15px; }
+  footer .footer__contact-info {
+    width: 25%;
+    height: 100%;
+    padding-top: 50px; }
+    footer .footer__contact-info .contact__decription {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333; }
+    footer .footer__contact-info .contact__box-location {
+      width: 403px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 20px; }
+      footer .footer__contact-info .contact__box-location .footer__phonetext {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #777777;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        margin-block: 2px;
+        cursor: pointer; }
+      footer .footer__contact-info .contact__box-location .footer__phonetext::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: rgba(209, 209, 209, 0.6);
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .30s ease; }
+      footer .footer__contact-info .contact__box-location .footer__phonetext:hover::after {
+        transform: scaleX(1); }
+    footer .footer__contact-info .contact__box {
+      width: 200px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 25px; }
+      footer .footer__contact-info .contact__box .footer__phonetext {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #777777;
+        margin-left: 5px;
+        display: inline-block;
+        position: relative;
+        margin-block: 2px;
+        cursor: pointer; }
+      footer .footer__contact-info .contact__box .footer__phonetext::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: rgba(209, 209, 209, 0.6);
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .30s ease; }
+      footer .footer__contact-info .contact__box .footer__phonetext:hover::after {
+        transform: scaleX(1); }
+  footer .footer__center {
+    width: 25%;
+    height: 100%;
+    padding-top: 35px;
+    padding-left: 70px; }
+    footer .footer__center .center__site-box {
+      display: flex;
+      align-items: center;
+      margin-top: 10px; }
+      footer .footer__center .center__site-box .footer__kolo {
+        width: 18px;
+        height: 18px;
+        background: #ACC7E8;
+        border-radius: 50%; }
+      footer .footer__center .center__site-box .site__box-compani {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333;
+        margin-left: 5px;
+        position: relative;
+        top: 7px; }
+  footer .footer__right {
+    width: 20%;
+    height: 100%;
+    padding-top: 50px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    footer .footer__right .Paje3__btn1 {
+      width: 100px;
+      height: 30px;
+      background: #93C5C2;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      border: none; }
+    footer .footer__right .Paje3__btn1:hover {
+      background-color: #FFA552;
+      transition: 0.2s; }
+    footer .footer__right .footer__btn {
+      width: 148px;
+      height: 41px;
+      background: #93C5C2;
+      border-radius: 20px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      transition: 1s; }
+    footer .footer__right .footer__btn:hover {
+      background-color: #FFA552;
+      transition: 0.4s; }
+    footer .footer__right .right__text-contact {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      text-align: right;
+      color: #777777;
+      margin-top: 20px; }
+  footer .footer__buterflue {
+    width: 5%;
+    height: 100%; }
+    footer .footer__buterflue .footer__buterfluuue {
+      position: relative;
+      right: 30px;
+      bottom: 35px; }
+
+.footer__phone {
+  width: 100%;
+  height: 55vh;
+  background-color: #E8F4F4; }
+  .footer__phone .footer__wer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; }
+  .footer__phone .footer__konec {
+    width: 100%;
+    height: 70%;
+    display: flex; }
+    .footer__phone .footer__konec .right__konec {
+      width: 20%;
+      height: 100%;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 100px; }
+      .footer__phone .footer__konec .right__konec .modal-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.75rem;
+        border-top: 1px solid #dee2e6;
+        border-bottom-right-radius: calc(0.3rem - 1px);
+        border-bottom-left-radius: calc(0.3rem - 1px); }
+        .footer__phone .footer__konec .right__konec .modal-footer .Paje3 .Paje3__left .Paje3__btn {
+          width: 192px;
+          height: 48px;
+          background: #93C5C2;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #FFFFFF;
+          border: none;
+          margin-top: 35px;
+          transition: 1s;
+          z-index: 5; }
+        .footer__phone .footer__konec .right__konec .modal-footer .Paje3 .Paje3__left .Paje3__btn1 {
+          width: 100px;
+          height: 30px;
+          background: #93C5C2;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #FFFFFF;
+          border: none; }
+        .footer__phone .footer__konec .right__konec .modal-footer .Paje3 .Paje3__left .Paje3__btn1:hover {
+          background-color: #FFA552;
+          transition: 0.2s; }
+        .footer__phone .footer__konec .right__konec .modal-footer .Paje3 .Paje3__left .Paje3__btn:hover {
+          background-color: #FFA552;
+          transition: 0.2s; }
+      .footer__phone .footer__konec .right__konec .left__sociable-box1 {
+        display: flex;
+        align-items: center;
+        margin-top: 35px; }
+        .footer__phone .footer__konec .right__konec .left__sociable-box1 .footer__sociable-instagram {
+          margin-left: 15px; }
+        .footer__phone .footer__konec .right__konec .left__sociable-box1 .sociable__keyframe22 {
+          width: 35px;
+          height: 35px; }
+        .footer__phone .footer__konec .right__konec .left__sociable-box1 .Paje3__btn1 {
+          width: 100px;
+          height: 30px;
+          background: #93C5C2;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #FFFFFF;
+          border: none; }
+        .footer__phone .footer__konec .right__konec .left__sociable-box1 .Paje3__btn1:hover {
+          background-color: #FFA552;
+          transition: 0.2s; }
+      .footer__phone .footer__konec .right__konec .footer__btn {
+        width: 148px;
+        height: 41px;
+        background: #93C5C2;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        transition: 1s; }
+      .footer__phone .footer__konec .right__konec .footer__btn:hover {
+        background-color: #FFA552;
+        transition: 0.4s; }
+      .footer__phone .footer__konec .right__konec .right__text-contact {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: right;
+        color: #777777;
+        margin-top: 20px; }
+    .footer__phone .footer__konec .center__konec {
+      width: 40%;
+      height: 100%;
+      padding-top: 40px;
+      padding-left: 60px; }
+      .footer__phone .footer__konec .center__konec .center__site-box {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; }
+        .footer__phone .footer__konec .center__konec .center__site-box .footer__kolo {
+          width: 18px;
+          height: 18px;
+          background: #ACC7E8;
+          border-radius: 50%; }
+        .footer__phone .footer__konec .center__konec .center__site-box .site__box-compani {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #333333;
+          margin-left: 5px;
+          position: relative;
+          top: 7px; }
+    .footer__phone .footer__konec .leaft__konec {
+      width: 40%;
+      height: 100%;
+      padding-left: 100px;
+      padding-top: 60px; }
+      .footer__phone .footer__konec .leaft__konec .contact__decription {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333; }
+      .footer__phone .footer__konec .leaft__konec .contact__box-location {
+        width: 403px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px; }
+        .footer__phone .footer__konec .leaft__konec .contact__box-location .footer__phonetext {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #777777;
+          margin-left: 5px;
+          display: inline-block;
+          position: relative;
+          margin-block: 2px;
+          cursor: pointer; }
+        .footer__phone .footer__konec .leaft__konec .contact__box-location .footer__phonetext::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: rgba(209, 209, 209, 0.6);
+          border-radius: 4px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform .30s ease; }
+        .footer__phone .footer__konec .leaft__konec .contact__box-location .footer__phonetext:hover::after {
+          transform: scaleX(1); }
+      .footer__phone .footer__konec .leaft__konec .contact__box {
+        width: 200px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 25px; }
+        .footer__phone .footer__konec .leaft__konec .contact__box .footer__phonetext {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #777777;
+          margin-left: 5px;
+          display: inline-block;
+          position: relative;
+          margin-block: 2px;
+          cursor: pointer; }
+        .footer__phone .footer__konec .leaft__konec .contact__box .footer__phonetext::after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background-color: rgba(209, 209, 209, 0.6);
+          border-radius: 4px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform .30s ease; }
+        .footer__phone .footer__konec .leaft__konec .contact__box .footer__phonetext:hover::after {
+          transform: scaleX(1); }
+
+#staticBackdrop {
+  margin-top: 120px; }
+
+.sociable__bootstap {
+  display: flex;
+  justify-content: center; }
+  .sociable__bootstap .bootstrap__sociable {
+    width: 35px;
+    height: 35px;
+    margin: 10px; }
+  .sociable__bootstap .bootstrap__sociable:hover {
+    filter: hue-rotate(190deg);
+    transition: 0.5s; }
+
+#exampleModal {
+  margin-top: 120px; }
+
+.modal-header h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  color: #333333; }
+
+.Paje3__bootstpaPhone {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  text-align: center; }
+
+.Paje__textboost2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  text-align: center; }
+
+span a {
+  color: #50C1E1; }
+
+.Paje3__btn1 {
+  width: 100px;
+  height: 30px;
+  background: #93C5C2;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: none; }
+
+.Paje3__btn1:hover {
+  background-color: #FFA552;
+  transition: 0.2s; }
+
+@media screen and (max-width: 1350px) {
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 30px; }
+
+  footer .foooter__leaft {
+    width: 20%;
+    padding-left: 100px; }
+
+  footer .footer__center {
+    width: 30%;
+    padding-left: 100px; }
+
+  footer .footer__contact-info {
+    padding-left: 30px; }
+
+  .Paje2 {
+    padding-top: 30px;
+    padding-right: 100px; } }
+@media screen and (max-width: 1300px) {
+  footer .foooter__leaft .left__sociable-box .sociable__keyframe {
+    width: 30px;
+    height: 30px; }
+
+  footer .foooter__leaft .left__sociable-box {
+    margin-top: 20px; }
+
+  footer .footer__contact-info .contact__decription {
+    font-size: 18px; }
+
+  footer .footer__contact-info .contact__box-location .footer__phonetext {
+    font-size: 16px; }
+
+  footer .footer__contact-info .contact__box .footer__phonetext {
+    font-size: 16px; }
+
+  footer .footer__center .center__site-box .site__box-compani {
+    font-size: 18px; } }
+@media screen and (max-width: 1250px) {
+  .Paje1 .containerr .header .header__upprostred .header__box .header__text {
+    font-size: 14px; }
+
+  .Paje2 .Paje2__box {
+    width: 100%;
+    height: 210px;
+    background: #EEF6F9;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    position: relative;
+    right: 0px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 80px;
+    padding-right: 100px; } }
+@media screen and (max-width: 1220px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 120px;
+    padding-right: 80px; } }
+@media screen and (max-width: 1150px) {
+  footer {
+    display: none; }
+
+  .footer__phone {
+    display: flex;
+    flex-direction: column; }
+
+  .Paje1 .containerr .header {
+    padding: 0 65px; }
+
+  .Paje2 {
+    padding-left: 80px;
+    padding-right: 80px; }
+
+  .Paje3 .Paje3__upprostred {
+    padding-left: 80px;
+    padding-right: 80px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    width: 75%;
+    height: 100%;
+    padding-left: 130px;
+    padding-right: 20px; } }
+@media screen and (max-width: 1120px) {
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 28px; } }
+@media screen and (max-width: 1080px) {
+  .Paje1 .containerr .main .upprostred__main {
+    width: 80%; }
+
+  .Paje1 .containerr .header .header__right .header__phone-box .text__header-phone {
+    font-size: 14px; }
+
+  .Paje1 .containerr .header {
+    padding: 0 35px; }
+
+  .footer__konec {
+    display: flex;
+    flex-direction: column; }
+
+  .footer__phone .footer__konec .right__konec {
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center; }
+
+  .footer__phone .footer__konec .center__konec {
+    width: 100%;
+    height: 40%;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__phone .footer__konec .leaft__konec {
+    width: 100%;
+    height: 30%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__phone {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__decription {
+    text-align: center; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__box {
+    display: flex;
+    justify-content: center; }
+
+  .footer__contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__box-location {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 25px; }
+
+  .footer__phone .footer__wer {
+    padding-top: 30px;
+    height: 20%; }
+
+  .footer__phone .footer__konec {
+    height: 80%; }
+
+  .Paje2 {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .Paje3 .Paje3__upprostred {
+    padding-left: 40px;
+    padding-right: 42px; } }
+@media screen and (max-width: 1010px) {
+  .Paje2 .Paje2__box .Paje2__titel {
+    font-size: 20px; }
+
+  .Paje2 :first-child {
+    font-size: 12px; }
+
+  .Paje2 :first-child .Paje2__textTitel {
+    font-size: 10px; }
+
+  .Paje1 .containerr .main .left__main .Left__main-Leaf {
+    width: 50px;
+    height: 48px; }
+
+  .Paje1 .containerr .main .right__main .Right__main-Laeftop {
+    width: 48px;
+    height: 46px; }
+
+  .Paje1 .containerr .header .header__upprostred {
+    width: 80%; }
+
+  .Paje2 .Paje2__box .Paje2__box-text .Bissets__main {
+    font-size: 20px; }
+
+  .Paje2 .Paje2__box .Paje2__box-text .Bissets__titel {
+    font-size: 16px; }
+
+  .Paje2 .Paje2__box .Paje2__box-photo {
+    width: 25%;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    align-items: center; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    width: 75%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 0px;
+    position: relative;
+    right: 50px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+    font-size: 30px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__description {
+    font-size: 16px; } }
+@media screen and (max-width: 960px) {
+  .Menu__bootstrap {
+    display: flex;
+    flex-direction: column; }
+
+  .Paje1 .containerr .header .header__upprostred {
+    width: 40%; }
+
+  .Paje1 .containerr .header .header__upprostred .header__box {
+    display: none; }
+
+  .header__text1 {
+    display: flex; }
+
+  .Paje1 .containerr .header .header__left {
+    width: 20%; }
+
+  .Paje1 .containerr .header .header__right {
+    width: 40%;
+    display: flex;
+    justify-content: space-around; }
+
+  .Paje2 {
+    padding-right: 80px; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    position: relative;
+    right: 30px; }
+
+  .Paje3 .Paje3__upprostred {
+    padding-left: 40px;
+    padding-right: 80px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+    width: 329px;
+    height: 223px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+    font-size: 28px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__description {
+    font-size: 14px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__btn {
+    width: 172px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 16px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 100px;
+    padding-right: 20px; } }
+@media screen and (max-width: 930px) {
+  .Paje1 .containerr .main .upprostred__main {
+    width: 70%; }
+
+  .Paje1 .containerr .main .left__main {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end; }
+
+  .Paje1 .containerr .main .right__main {
+    width: 15%; }
+
+  .header__logoglogo {
+    width: 90px;
+    height: 45px; } }
+@media screen and (max-width: 890px) {
+  .Paje1 .containerr .main .upprostred__main {
+    width: 100%; }
+
+  .Paje1 .containerr .main .left__main {
+    display: none; }
+
+  .Paje1 .containerr .main .right__main {
+    display: none; }
+
+  .Paje2 :first-child {
+    font-size: 14px; }
+
+  .Paje2 :first-child .Paje2__textTitel {
+    font-size: 12px; }
+
+  .Paje2 h2 {
+    font-size: 30px;
+    margin-top: 15px; }
+
+  .Paje2 .Paje2__description {
+    font-size: 16px;
+    margin-top: 10px; }
+
+  .Paje2 {
+    padding-right: 70px; }
+
+  .Paje3 .Paje3__upprostred {
+    padding-right: 70px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 80px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 50%;
+    height: 580px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px; }
+
+  .Paje3 .Paje3__upprostred .down {
+    display: none; }
+
+  .Paje3 .Paje3__upprostred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px; }
+
+  .Paje3 .Paje3__upprostred .ver {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .Paje3 .Paje3__upprostred .nic {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .Paje3 .Paje3__upprostred .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__btn {
+    margin-top: 40px; } }
+@media screen and (max-width: 800px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+    width: 301px;
+    height: 185px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 30px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+    font-size: 26px; } }
+@media screen and (max-width: 790px) {
+  .offcanvas {
+    width: 400px; }
+
+  .header__text1 {
+    display: none; }
+
+  .Paje2 .Paje2__box .Paje2__box-photo {
+    width: 25%;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    width: 75%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 10px; } }
+@media screen and (max-width: 790px) and (max-width: 730px) {
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 24px; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__decription {
+    font-size: 18px; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__box .footer__phonetext {
+    font-size: 16px; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__box-location .footer__phonetext {
+    font-size: 16px; }
+
+  .footer__phone .footer__konec .center__konec .center__site-box .site__box-compani {
+    font-size: 16px; }
+
+  .Paje2 .Paje2__box .Paje2__box-photo {
+    width: 25%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    width: 75%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 10px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left {
+    height: 40%; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    height: 60%; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 55%; } }
+@media screen and (max-width: 790px) and (max-width: 670px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 65%; } }
+@media screen and (max-width: 790px) and (max-width: 641px) {
+  .Paje2 .Paje2__box {
+    padding-left: 20px; }
+
+  .Paje2 {
+    padding-top: 15px; }
+
+  .Paje2 .Paje2__box {
+    display: flex;
+    flex-direction: column;
+    height: 340px; }
+
+  .Paje2 .Paje2__box .Paje2__box-photo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 50px;
+    justify-content: center; }
+
+  .Paje2 .Paje2__box .Paje2__box-text {
+    width: 100%;
+    height: 75%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: 0px; }
+
+  .Paje2 {
+    padding-right: 55px; }
+
+  .Paje2 .Paje2__box .Paje2__box-photo .Paje2__mainBox-photo {
+    width: 80px;
+    height: 80px; } }
+@media screen and (max-width: 790px) and (max-width: 640px) {
+  .Paje2__biseetsPhotoo {
+    width: 40px;
+    height: 40px; }
+
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 22px; }
+
+  .header__logoglogo {
+    width: 90px;
+    height: 45px; }
+
+  .Menu__bootstrap {
+    width: 35px;
+    height: 35px; }
+
+  .offcanvas {
+    width: 320px; }
+
+  .header__box {
+    margin: 0px; }
+
+  .header__text {
+    font-size: 12px; }
+
+  .header__phoneBoxPhone {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ACC7E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    animation-name: phone;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+  .header__phoneBoxPhoneimg {
+    width: 15px;
+    height: 15px;
+    animation-name: phone1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+
+  .header__phone-img {
+    display: none; }
+
+  .text__header-phone {
+    display: none; }
+
+  .Paje1 .containerr .header .header__right {
+    display: flex;
+    justify-content: flex-end; }
+
+  .scrll-down {
+    display: none; }
+
+  #exampleModal {
+    width: 350px;
+    margin-left: 140px; } }
+@media screen and (max-width: 790px) {
+  .Paje3 {
+    position: relative;
+    top: 30px; } }
+@media screen and (max-width: 610px) {
+  #exampleModal {
+    width: 350px;
+    margin-left: 120px; } }
+@media screen and (max-width: 580px) {
+  #exampleModal {
+    width: 350px;
+    margin-left: 100px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 70%; } }
+@media screen and (max-width: 560px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 75%; } }
+@media screen and (max-width: 560px) {
+  #exampleModal {
+    width: 350px;
+    margin-left: 80px; }
+
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 20px; }
+
+  .footer__phone .footer__konec .center__konec {
+    padding-top: 1px; }
+
+  .footer__phone .footer__konec .right__konec {
+    padding-top: 1px; }
+
+  .footer__phone {
+    height: 100vh; }
+
+  .footer__phone .footer__konec .leaft__konec .contact__box-location {
+    display: none; }
+
+  .footer__phone .footer__konec .leaft__konec {
+    height: 25%; }
+
+  .Paje2 :first-child {
+    font-size: 14px; }
+
+  .Paje2 :first-child .Paje2__textTitel {
+    font-size: 10px; }
+
+  .Paje2 h2 {
+    font-size: 24px;
+    margin-top: 0px; }
+
+  .Paje2 .Paje2__description {
+    font-size: 14px;
+    margin-top: 0px; }
+
+  .Paje2 .Paje2__box .Paje2__titel {
+    font-size: 20px; }
+
+  .Paje2 :first-child {
+    font-size: 12px; }
+
+  .Paje2 :first-child .Paje2__textTitel {
+    font-size: 10px; } }
+@media screen and (max-width: 520px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 80%; } }
+@media screen and (max-width: 500px) {
+  #exampleModal {
+    width: 350px;
+    margin-left: 50px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box {
+    width: 100%; }
+
+  .Paje3 .Paje3__upprostred {
+    padding-left: 40px;
+    padding-right: 55px; }
+
+  .Paje2 .Paje2__box .Paje2__box-text .Bissets__titel {
+    font-size: 14px; }
+
+  .Paje2 .Paje2__box .Paje2__box-text .Bissets__main {
+    font-size: 18px; } }
+@media screen and (max-width: 430px) {
+  .Paje3 .Paje3__upprostred {
+    padding-right: 35px; }
+
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 16px; }
+
+  .offcanvas {
+    width: 100%; }
+
+  .header__kolo {
+    display: none; }
+
+  .header__text {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px; }
+
+  .offcanvas-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50%;
+    padding-left: 5%; }
+
+  .btn-close {
+    position: relative;
+    bottom: 200px; }
+
+  .Paje2 {
+    padding-right: 35px; }
+
+  footer .footer__right #staticBackdrop {
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 200px; }
+
+  .Paje3qqq {
+    position: relative;
+    bottom: 70px; }
+
+  #exampleModal {
+    width: 350px;
+    margin-left: 25px; }
+
+  .Paje3qqq {
+    height: 105vh; } }
+@media screen and (max-width: 410px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+    width: 277px;
+    height: 170px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right {
+    padding-left: 20px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+    font-size: 24px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__btn {
+    width: 157px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 14px; } }
+@media screen and (max-width: 400px) {
+  #exampleModal {
+    width: 350px;
+    margin-left: 15px; }
+
+  .Paje3qqq {
+    position: relative;
+    bottom: 120px; } }
+@media screen and (max-width: 375px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+    width: 263px;
+    height: 161px; }
+
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-right .Paje3__titel {
+    font-size: 22px; } }
+@media screen and (max-width: 360px) {
+  footer .footer__right #staticBackdrop {
+    width: 330px;
+    margin-left: 15px;
+    margin-top: 180px; }
+
+  #exampleModal {
+    width: 350px;
+    margin-left: 6px; }
+
+  .Paje1 .containerr .main .upprostred__main .text__main {
+    font-size: 14px; }
+
+  .header__text::after {
+    display: none; }
+
+  .header__text:hover {
+    filter: blur(1px); } }
+@media screen and (max-width: 360px) {
+  .Paje3 .Paje3__upprostred .Paje3__big-box .Paje3__box-left .Paje3__bissets1 {
+    width: 250px;
+    height: 153px; } }
+@media screen and (max-width: 320px) {
+  #exampleModal {
+    width: 300px; } }
+.header__text::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #d6ebff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease; }
+
+.header__text:hover::after {
+  transform: scaleX(1); }
+
+a {
+  text-decoration: none; }
+
+@keyframes phone {
+  0% {
+    position: relative;
+    top: 1px;
+    filter: hue-rotate(5deg); }
+  5% {
+    position: relative;
+    top: 2px;
+    filter: hue-rotate(35deg); }
+  10% {
+    position: relative;
+    bottom: 1px;
+    filter: hue-rotate(85deg); }
+  15% {
+    position: relative;
+    bottom: 2px;
+    filter: hue-rotate(205deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+::-webkit-scrollbar {
+  width: 14px; }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #45adff 0%, #0b74da 100%);
+  border-radius: 10px 0px 10px 0px;
+  -webkit-border-radius: 10px 0px 10px 0px;
+  -moz-border-radius: 10px 0px 10px 0px;
+  -ms-border-radius: 10px 0px 10px 0px;
+  -o-border-radius: 10px 0px 10px 0px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f4fae; }
+
+/*# sourceMappingURL=style.css.map */
