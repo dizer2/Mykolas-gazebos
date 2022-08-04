@@ -1,0 +1,1928 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+@mixin diss () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin vh ($vhh: 100vh) {
+    width: 100%;
+    height:  $vhh;
+ }
+@mixin bok () {
+     width: 50%;
+     height: 100%;
+}
+@mixin big () {
+     width: 100%;
+     height: 100%;
+}
+$HeaderColor: #ACC7E8;
+$LogoFirst: #50C1E1;
+$Btn: #93C5C2;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none ;
+    color: #333333
+}
+body {
+    overflow-x: hidden;
+  }
+.Paje1{
+    @include vh(10vh) ;
+    .containerr{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/Paje1/header/background.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        .header{
+            width: 100%;
+            height: 10vh;
+            padding: 0 100px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+         .header__left{
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .logo{
+                width: 100.83px;
+                height: 49px;
+            }
+         }
+         .header__upprostred{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333333;
+            .header__box{
+                display: flex;
+                align-items: center;
+                margin: 35px;
+                .header__kolo{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $HeaderColor;
+                }
+                .header__kolo:hover{
+                    filter: hue-rotate(-0.25turn);
+                    }
+                .header__text{
+                    margin-left: 5px;
+                    display: inline-block;
+                    position: relative;
+                    margin-block: 2px;
+                    animation-name: textinda;
+                    animation-duration: 4s;
+                    animation-iteration-count: 1;
+                     
+                }
+                .header__text::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgb(214, 235, 255);
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform .25s ease; }
+                    .header__text:hover::after {
+                    transform: scaleX(1); }
+            }
+         }
+         .header__right{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .header__phone-box{
+                display: flex;
+                align-items: center;
+                .header__phone-img{
+                    width: 15px;
+                    height: 15px;
+
+                    
+                }
+                .header__phone-img:hover{
+                    filter: hue-rotate(-0.25turn);
+                }
+                .text__header-phone{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    position: relative;
+                    top: 8px;
+                    left: 5px;
+                    color: #333333;
+                }
+            }
+         }
+        }
+      
+            }
+.footer__phone{
+    display: none;
+}
+.header__phoneBoxPhone{
+    display: none;
+}
+
+
+.header__text1{
+position: relative;
+top: 10px;
+}
+.header__box{
+        display: flex;
+        align-items: center;
+        margin: 35px;
+}
+.header__kolo{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:#ACC7E8 ;
+        }
+.header__text{
+            margin-left: 5px;
+            display: inline-block;
+            position: relative;
+            margin-block: 2px;
+            animation-name: textinda;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            cursor: pointer;
+            font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+             
+        }
+.Menu__bootstrap{
+display: none;
+position: relative;
+bottom: 2px;
+margin-left: 10px;
+width: 35px;
+height: 35px;
+}
+.header__text1{
+display: none;
+}
+.btn-close{
+position: relative;
+bottom: 100px;
+}
+.offcanvas{
+width: 500px;
+}
+.Paje2{
+    width: 100%;
+    height: 35vh;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    :first-child{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ACC7E8;
+        animation-name: paje2__titell;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        perspective: 1px;
+        @keyframes paje2__titell {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            51%{
+                opacity: 0.1;
+                position: relative;
+                right: 50px;
+            }
+            100%{
+                opacity: 1;
+                position: relative;
+                right: 0;
+            }
+        }
+        .Paje2__textTitel{
+        font-size: 14px;
+        line-height: 17px;
+        color: #777777;
+
+        }
+    }
+    h2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        color: #333333;
+        margin-top: 30px;
+        animation-name: paje2__h2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        perspective: 1px;
+        transition: 1s;
+        @keyframes paje2__h2 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            51%{
+                opacity: 0.1;
+                position: relative;
+                right: 75px;
+                transition: 0.5s;
+            }
+            100%{
+                opacity: 1;
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+    .Paje2__description{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin-top: 20px;
+        animation-name: paje2__description;
+        animation-duration: 3.2s;
+        animation-iteration-count: 1;
+        @keyframes paje2__description {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            51%{
+                opacity: 0.1;
+                position: relative;
+                right: 105px;
+            }
+            100%{
+                opacity: 1;
+                position: relative;
+                right: 0;
+            }
+        }
+    }
+   
+}
+.Paje3{
+    width: 100%;
+    height: 5vh;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    .Paje3__leaf-left{
+        position: relative;
+        top: 5px;
+        animation-name: LeaftLeaf;
+        animation-duration: 35s;
+        animation-iteration-count: 1;
+        z-index: 999;
+        @keyframes LeaftLeaf {
+            0%{
+                position: relative;
+                left: 5em;
+                top: 0.5em;
+                transform: rotate(10deg);
+            }
+
+            100%{
+                position: relative;
+                left: 50em;
+                top: 70em;
+                transform: rotate(360deg);
+                will-change: auto;
+            }
+
+        }
+    }
+    .Paje3__leaf-right{
+        position: relative;
+        top: 100px;
+        animation-name: Leaftop;
+        animation-duration: 45s;
+        animation-iteration-count: 1;
+        z-index: 999;
+        @keyframes Leaftop {
+            0%{
+                position: relative;
+                right: 15em;
+                top: 0.5em;
+                transform: rotate(10deg);
+            }
+
+            100%{
+                position: relative;
+                right: 65em;
+                top: 80em;
+                transform: rotate(360deg);
+                will-change: auto;
+            }
+
+        }
+    }
+}
+.Paje4{
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    background-color: #F8F8F8;
+    animation-name: paje2__container;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    .left__box{
+        width: 73%;
+        display: flex;
+        .Catalog__box-big1{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            .Catalog__boxName:hover{
+                background-color: #F4FBFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.32);
+                border-radius: 20px;
+                transition: 0.6s;
+            }
+            .Catalog__boxName{
+                width: 355px;
+                height: 435px;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 1s;
+                
+                .boxName__wer{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 15px;
+              }
+                .boxName__nic{
+                    width: 100%;
+                    height: 40%;
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    padding-right: 42px;
+                    .boxName__textTitel{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #3F4447;
+                    }
+                    .boxName__textDescription{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+        .Catalog__box-big{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .Catalog__boxName:hover{
+                background-color: #F4FBFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.32);
+                border-radius: 20px;
+                transition: 0.6s;
+            }
+            .Catalog__boxName{
+                width: 355px;
+                height: 435px;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 1s;
+
+                .boxName__wer{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 15px;
+              }
+                .boxName__nic{
+                    width: 100%;
+                    height: 40%;
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    padding-right: 42px;
+                    .boxName__textTitel{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #3F4447;
+                    }
+                    .boxName__textDescription{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    .rigth__box{
+        width: 37%;
+        .Catalog__box-big3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 100px;
+            .Catalog__boxName:hover{
+                background-color: #F4FBFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.32);
+                border-radius: 20px;
+                transition: 0.6s;
+            }
+            .Catalog__boxName{
+                width: 355px;
+                height: 435px;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 1s;
+                .boxName__wer{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 15px;
+                    .Paje4__virobu-img{
+                        width: 228px;
+                        height: 172.33px;
+                        position: relative;
+                        top: 40px;
+                    }
+              }
+                .boxName__nic{
+                    width: 100%;
+                    height: 40%;
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    padding-right: 42px;
+                    .boxName__textTitel{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #3F4447;
+                    }
+                    .boxName__textDescription{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .Paje6{
+        width: 100%;
+        min-height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 30px;
+        .Paje6__textLeft{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+        }
+        .Paje6__textCenter{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #0F598E;
+    
+        }
+        .Page6__textRight{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+            .Paje6__textCreator{
+                color: #ACC7E8;
+                transition: 0.6;
+            }
+            .Paje6__textCreator:hover{
+                color: #FFA552;
+                transition: 0.4;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: 35vh;
+        background-color: #E8F4F4;
+        display: flex;
+        .foooter__leaft{
+            width: 25%;
+            height: 100%;
+            padding-top: 50px;
+            padding-left: 120px;
+            .left__sociable-box{
+                width: 150px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin-top: 35px;
+                .sociable__keyframe:hover{
+                    filter: hue-rotate(190deg);
+                    transition: 0.5s;
+                }
+                .footer__sociable-instagram {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .footer__contact-info{
+            width: 25%;
+            height: 100%;
+            padding-top: 50px;
+            .contact__decription{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #333333;
+            }
+            .contact__box-location{
+                width: 403px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                .footer__phonetext{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #777777;
+                    margin-left: 5px;
+                    display: inline-block;
+                    position: relative;
+                    margin-block: 2px;
+                    cursor: pointer;
+                }
+                .footer__phonetext::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgba(209, 209, 209, 0.6);
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform .30s ease; }
+                    .footer__phonetext:hover::after {
+                    transform: scaleX(1); }
+            }
+            .contact__box{
+                width: 200px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                margin-top: 25px;
+                .footer__phonetext{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #777777;
+                    margin-left: 5px;
+                    display: inline-block;
+                    position: relative;
+                    margin-block: 2px;
+                    cursor: pointer;
+                }
+                .footer__phonetext::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgba(209, 209, 209, 0.6);
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform .30s ease; }
+                    .footer__phonetext:hover::after {
+                    transform: scaleX(1); }
+            }
+        }
+        .footer__center{
+            width: 25%;
+            height: 100%;
+            padding-top: 35px;
+            padding-left: 70px;
+            .center__site-box{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                .footer__kolo{
+                    width: 18px;
+                    height: 18px;
+                    background: #ACC7E8;
+                    border-radius: 50%;
+                    
+                }
+                .site__box-compani{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #333333;
+                    margin-left: 5px;
+                    position: relative;
+                    top: 7px;
+                }
+            }
+        }
+        .footer__right{
+            width: 20%;
+            height: 100%;
+            padding-top: 50px;
+            padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .Paje3__btn1{
+                width: 100px;
+                height: 30px;
+                background: #93C5C2;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border: none;
+            }
+            .Paje3__btn1:hover{
+                background-color: #FFA552;
+                transition: 0.2s;
+            
+           
+            }
+            .footer__btn{
+                width: 148px;
+                height: 41px;
+                background: #93C5C2;
+                border-radius: 20px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #FFFFFF;
+                transition: 1s;
+            }
+            .footer__btn:hover{
+                background-color: #FFA552;
+                transition: 0.4s;
+            }
+            .right__text-contact{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                text-align: right;
+                color: #777777;
+                margin-top: 20px;
+    
+            }
+        }
+        .footer__buterflue{
+            width: 5%;
+            height: 100%;
+            .footer__buterfluuue{
+                position: relative;
+                right: 30px;
+                bottom: 35px;
+            }
+        }
+    }
+    .footer__phone{
+        width: 100%;
+        height: 55vh;
+        background-color: #E8F4F4;
+        .footer__wer{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+    
+        }
+        .footer__konec{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            
+            .right__konec{
+                width: 20%;
+                height: 100%;
+                padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 100px;
+                .modal-footer {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding: 0.75rem;
+                    border-top: 1px solid #dee2e6;
+                    border-bottom-right-radius: calc(0.3rem - 1px);
+                    border-bottom-left-radius: calc(0.3rem - 1px);
+                    .Paje3 .Paje3__left .Paje3__btn {
+                        width: 192px;
+                        height: 48px;
+                        background: #93C5C2;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                        border: none;
+                        margin-top: 35px;
+                        transition: 1s;
+                        z-index: 5; }
+                      .Paje3 .Paje3__left .Paje3__btn1 {
+                        width: 100px;
+                        height: 30px;
+                        background: #93C5C2;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                        border: none; }
+                      .Paje3 .Paje3__left .Paje3__btn1:hover {
+                        background-color: #FFA552;
+                        transition: 0.2s; }
+                      .Paje3 .Paje3__left .Paje3__btn:hover {
+                        background-color: #FFA552;
+                        transition: 0.2s; }
+                }
+                .left__sociable-box1{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 35px;
+                    .footer__sociable-instagram {
+                        margin-left: 15px;
+                    }
+                    .sociable__keyframe22{
+                        width: 35px;
+                        height: 35px;
+                    }
+                    .Paje3__btn1{
+                        width: 100px;
+                        height: 30px;
+                        background: #93C5C2;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+                        border: none;
+                    }
+                    .Paje3__btn1:hover{
+                        background-color: #FFA552;
+                        transition: 0.2s;
+                    }
+                }
+                .footer__btn{
+                    width: 148px;
+                    height: 41px;
+                    background: #93C5C2;
+                    border-radius: 20px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    transition: 1s;
+                }
+                .footer__btn:hover{
+                    background-color: #FFA552;
+                    transition: 0.4s;
+                }
+                .right__text-contact{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 15px;
+                    text-align: right;
+                    color: #777777;
+                    margin-top: 20px;
+        
+                }
+            }
+                .center__konec{
+                    width: 40%;
+                    height: 100%;
+                    padding-top: 40px;
+                    padding-left: 60px;
+                    .center__site-box{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        .footer__kolo{
+                            width: 18px;
+                            height: 18px;
+                            background: #ACC7E8;
+                            border-radius: 50%;
+                            
+                        }
+                        .site__box-compani{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #333333;
+                            margin-left: 5px;
+                            position: relative;
+                            top: 7px;
+                        }
+                    }
+                }
+                .leaft__konec{
+                    width: 40%;
+                    height: 100%;
+                    padding-left: 100px;
+                    padding-top: 60px;
+                .contact__decription{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #333333;
+                }
+                .contact__box-location{
+                    width: 403px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    .footer__phonetext{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #777777;
+                        margin-left: 5px;
+                        display: inline-block;
+                        position: relative;
+                        margin-block: 2px;
+                        cursor: pointer;
+                    }
+                    .footer__phonetext::after {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: rgba(209, 209, 209, 0.6);
+                        border-radius: 4px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: transform .30s ease; }
+                        .footer__phonetext:hover::after {
+                        transform: scaleX(1); }
+                }
+                .contact__box{
+                    width: 200px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 25px;
+                    .footer__phonetext{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #777777;
+                        margin-left: 5px;
+                        display: inline-block;
+                        position: relative;
+                        margin-block: 2px;
+                        cursor: pointer;
+                    }
+                    .footer__phonetext::after {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: rgba(209, 209, 209, 0.6);
+                        border-radius: 4px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: transform .30s ease; }
+                        .footer__phonetext:hover::after {
+                        transform: scaleX(1); }
+                }
+            }
+        }
+    }
+#staticBackdrop{
+        margin-top: 120px;
+      }
+     
+    .sociable__bootstap{
+        display: flex;
+        justify-content: center;
+        .bootstrap__sociable{
+            width: 35px;
+            height: 35px;
+            margin: 10px;
+        }
+        .bootstrap__sociable:hover{
+            filter: hue-rotate(190deg);
+            transition: 0.5s;
+        }
+    }
+    #exampleModal{
+      margin-top: 120px;
+    }
+    .modal-header h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Montserrat';
+            font-weight: 300;
+            color: #333333;
+
+    }
+.Paje3__bootstpaPhone{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    text-align: center;
+}
+    .Paje__textboost2{
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #777777;
+text-align: center;
+    }
+span a{
+   color: #50C1E1 ;
+}
+
+.Paje3__btn1{
+    width: 100px;
+    height: 30px;
+    background: #93C5C2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+}
+.Paje3__btn1:hover{
+    background-color: #FFA552;
+    transition: 0.2s;
+
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:1350px){
+           
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 30px;
+        } 
+          footer .foooter__leaft{
+            width: 20%;
+            padding-left: 100px;
+          }
+          footer .footer__center{
+            width: 30%;
+            padding-left: 100px;
+          }
+          footer .footer__contact-info {
+            padding-left: 30px;
+          }
+          .Paje2{
+            padding-top: 30px;
+            padding-right: 100px;
+          }
+        .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName{
+            width: 320px;
+        }
+        .Paje4 .left__box .Catalog__box-big .Catalog__boxName{
+            width: 320px;
+
+        }
+        .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName{
+            width: 320px;
+        }
+
+
+        }
+        @media screen and (max-width:1300px){
+        footer .foooter__leaft .left__sociable-box .sociable__keyframe{
+        width: 30px;
+        height: 30px;
+        }
+        footer .foooter__leaft .left__sociable-box{
+        margin-top: 20px;
+        }
+        footer .footer__contact-info .contact__decription{
+        font-size: 18px;
+        }
+        footer .footer__contact-info .contact__box-location .footer__phonetext {
+        font-size: 16px;
+        }
+        footer .footer__contact-info .contact__box .footer__phonetext{
+        font-size: 16px;
+        }
+        footer .footer__center .center__site-box .site__box-compani{
+        font-size: 18px;
+        }
+        }
+        
+        @media screen and (max-width:1250px){
+        .Paje1 .containerr .header .header__upprostred .header__box .header__text{
+        font-size: 14px
+        }
+        .Paje4 {
+            min-height: 160vh; }
+            .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName{
+                width: 275px;
+                height: 435px;              
+            }
+            .Paje4 .left__box .Catalog__box-big .Catalog__boxName{
+                width: 275px;
+                height: 435px;              
+                            
+            }
+            .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName{
+                width: 275px;
+                height: 435px;              
+                         
+            }
+            .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName .boxName__nic .boxName__textTitel{
+                font-size: 22px
+            }
+            .Paje4__virobu-img{
+                height: 220px ;
+            }
+            .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName .boxName__wer .Paje4__virobu-img {
+                position: relative;
+                top: 30px;
+            }
+            .Paje4 .left__box .Catalog__box-big .Catalog__boxName .boxName__nic {
+                padding-top: 0px;
+            }
+            .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName .boxName__nic {
+                padding-top: 0px;
+            }
+  .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName .boxName__nic {
+                padding-top: 0px;
+
+            }
+            .Paje6 .Paje6__textLeft{
+                font-size: 14px;
+              }
+              .Paje6 .Paje6__textCenter{
+                font-size: 14px;
+              }
+              .Paje6 .Page6__textRight {
+                font-size: 14px;
+              }
+    
+        
+        }
+
+
+
+
+
+        @media screen and (max-width:1150px){
+        footer{
+        display: none;
+        }
+        
+        
+        .footer__phone{
+        display: flex;
+        flex-direction: column;
+        }
+        .Paje1 .containerr .header{
+        padding: 0 65px;
+        }
+        .Paje2{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .Paje4 .left__box .Catalog__box-big1{
+            padding-left: 80px;
+        }
+        .Paje4 .rigth__box .Catalog__box-big3{
+            padding-right: 80px;
+        }
+    }
+        @media screen and (max-width:1120px){
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 28px;
+        } 
+        .Paje6 .Paje6__textCenter {
+            display: none;
+            }
+    
+        }
+        
+        @media screen and (max-width:1080px){
+        .Paje1 .containerr .main .upprostred__main {
+        width: 80%;
+        }
+        .Paje1 .containerr .header .header__right .header__phone-box .text__header-phone{
+        font-size: 14px;
+        }
+        .Paje1 .containerr .header{
+        padding: 0 35px;
+        }
+        .footer__konec{
+        display: flex;
+        flex-direction: column;
+        }
+        .footer__phone .footer__konec .right__konec {
+        width: 100%;
+        height: 30%;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        }
+        .footer__phone .footer__konec .center__konec {
+        width: 100%;
+        height: 40%;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+        .footer__phone .footer__konec .leaft__konec{
+        width: 100%;
+        height: 30%;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+        .footer__phone{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .footer__phone .footer__konec .leaft__konec .contact__decription {
+        text-align: center;
+        }
+        .footer__phone .footer__konec .leaft__konec .contact__box {
+        display: flex;
+        justify-content: center;
+        }
+        .footer__contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .footer__phone .footer__konec .leaft__konec .contact__box-location{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 25px;
+        }
+        .footer__phone .footer__wer{
+        padding-top: 30px;
+        height: 20%;
+        }
+        .footer__phone .footer__konec{
+        height: 80%;
+        }
+        .Paje2{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .Paje4 .left__box .Catalog__box-big1{
+            padding-left: 40px;
+        }
+        .Paje4 .rigth__box .Catalog__box-big3{
+            padding-right: 40px;
+        }
+
+        }
+        @media screen and (max-width:1010px){
+        .Paje1 .containerr .main .left__main .Left__main-Leaf{
+        width: 50px;
+        height: 48px;
+        }
+        .Paje1 .containerr .main .right__main .Right__main-Laeftop{
+        width: 48px;
+        height: 46px;
+        }
+        .Paje1 .containerr .header .header__upprostred{
+        width: 80%;
+        }
+        .Paje4{
+            display: flex;
+            flex-direction: column;
+        }
+         .Paje4 .rigth__box{
+            width: 100%;
+        }
+        .Paje4 .rigth__box .Catalog__box-big3 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+            
+            .Paje4 .left__box{
+                width: 100%;
+            }
+            .Paje4 .left__box .Catalog__box-big1{
+                padding-left: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 40px;
+            }
+            .Paje4 .left__box .Catalog__box-big {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; 
+                padding-left: 40px;}
+                .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName {
+                   margin: 40px;}
+                
+        }
+        @media screen and (max-width:960px){
+        .Menu__bootstrap{
+        display: flex;
+        flex-direction: column;
+        }
+        .Paje1 .containerr .header .header__upprostred{
+        width: 40%;
+        }
+        .Paje1 .containerr .header .header__upprostred .header__box{
+        display: none;
+        }
+        .header__text1{
+        display: flex;
+        }
+        .Paje1 .containerr .header .header__left{
+        width: 20%;
+        }
+        .Paje1 .containerr .header .header__right{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        }
+      
+        }
+        
+        @media screen and (max-width:930px){
+        .Paje1 .containerr .main .upprostred__main {
+        width: 70%;
+        }
+        .Paje1 .containerr .main .left__main {
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+        }
+        .Paje1 .containerr .main .right__main {
+        width: 15%;
+        }
+        .header__logoglogo{
+        width: 90px;
+        height: 45px;
+        }
+        .Paje3{
+            display: none;
+        }
+        }
+        @media screen and (max-width: 890px){
+        .Paje1 .containerr .main .upprostred__main {
+        width: 100%;
+        }
+        .Paje1 .containerr .main .left__main {
+        display: none;
+        }
+        .Paje1 .containerr .main .right__main {
+        display: none;
+        }
+        .Paje2 :first-child{
+            font-size: 14px;
+        }
+        .Paje2 :first-child .Paje2__textTitel{
+            font-size: 12px;
+        }
+        .Paje2 h2{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .Paje2 .Paje2__description{
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .Paje2{
+            padding-right: 70px;
+        }
+        .Paje6 .Paje6__textLeft {
+            font-size: 12px;
+            }
+            .Paje6 .Page6__textRight {
+            font-size: 12px;
+            }
+       
+        }
+        @media screen and (max-width: 790px){
+        .offcanvas{
+        width: 400px;
+        }
+        .header__text1{
+        display: none;
+        }
+        .Paje4 .left__box .Catalog__box-big1{
+            padding-right: 20px;
+        }
+        .Paje4 .left__box .Catalog__box-big {
+            padding-left: 20px;}
+            .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName {
+               margin: 20px;}
+
+        }
+        
+        @media screen and (max-width: 730px){
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 24px;
+        } 
+        .footer__phone .footer__konec .leaft__konec .contact__decription{
+        font-size: 18px;
+        }
+        .footer__phone .footer__konec .leaft__konec .contact__box .footer__phonetext{
+        font-size: 16px;
+        }
+        .footer__phone .footer__konec .leaft__konec .contact__box-location .footer__phonetext{
+        font-size: 16px;
+        }
+        .footer__phone .footer__konec .center__konec .center__site-box .site__box-compani{
+        font-size: 16px;
+        }
+        .Paje4 .left__box {
+            display: flex; 
+            flex-direction: column;
+        }
+        .Paje4 .left__box .Catalog__box-big1 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 0px; 
+            padding-right: 0px;
+        }
+        .Paje4 .left__box .Catalog__box-big {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 0px; 
+            padding-right: 0px; }
+            .Paje4 .rigth__box .Catalog__box-big3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            } 
+            .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName {
+               margin-top:  50px; }
+               .Paje6{
+                min-height: 10vh;
+                padding-top: 15px;
+                }
+
+        
+        }
+        @media screen and (max-width: 640px){
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 22px;
+        } 
+        .header__logoglogo{
+        width: 90px;
+        height: 45px;
+        }
+        .Menu__bootstrap{
+        width: 35px;
+        height: 35px
+        }
+        .offcanvas{
+        width: 320px;
+        }
+        .header__box{
+        margin: 0px;
+        }
+        .header__text{
+        font-size: 12px;
+        }
+        .header__phoneBoxPhone{
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ACC7E8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            animation-name: phone ;
+            animation-duration: 0.4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        
+        }
+        .header__phoneBoxPhoneimg{
+        width: 15px;
+        height: 15px;
+        animation-name: phone1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+        .header__phone-img{
+        display: none;
+        }
+        .text__header-phone{
+        display: none;
+        }
+        .Paje1 .containerr .header .header__right{
+        display: flex;
+        justify-content: flex-end;
+        
+        }
+        .scrll-down{
+        display: none;
+        }
+        .Paje2{
+            height: 40vh;
+        }
+
+        #exampleModal{
+            width: 350px;
+            margin-left: 140px;
+        }
+        }
+        @media screen and (max-width: 610px){
+            #exampleModal{
+                width: 350px;
+                margin-left: 120px;
+            }
+            .Paje6 .Paje6__textLeft{
+                text-align: center;
+            }
+            .Paje6 .Page6__textRight {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 580px){
+            #exampleModal{
+                width: 350px;
+                margin-left: 100px;
+            }
+        }
+        @media screen and (max-width: 560px){
+          
+                #exampleModal{
+                    width: 350px;
+                    margin-left: 80px;
+                }
+            
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 20px;
+        } 
+        .footer__phone .footer__konec .center__konec{
+        padding-top: 1px;
+        }
+        .footer__phone .footer__konec .right__konec{
+        padding-top: 1px;
+        }
+        .footer__phone{
+        height: 100vh;
+        }
+        .footer__phone .footer__konec .leaft__konec .contact__box-location {
+        display: none;
+        }
+        .footer__phone .footer__konec .leaft__konec{
+        height: 25%;
+        }
+        .Paje2 :first-child {
+            font-size: 14px;
+        }
+        .Paje2 :first-child .Paje2__textTitel{
+            font-size: 10px;
+        }
+        .Paje2 h2{
+            font-size: 24px;
+            margin-top: 0px;
+        }
+        .Paje2 .Paje2__description{
+            font-size: 14px;
+            margin-top: 0px;
+        }
+        .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName{
+            width: 255px;
+            height: 405px;              
+        }
+        .Paje4 .left__box .Catalog__box-big .Catalog__boxName{
+            width: 255px;
+            height: 405px;                
+                        
+        }
+        .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName{
+            width: 255px;
+            height: 405px;                 
+                     
+        }
+        .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName .boxName__nic .boxName__textTitel{
+            font-size: 20px
+        }
+        .Paje4__virobu-img{
+            height: 200px ;
+        }
+        .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName .boxName__wer .Paje4__virobu-img {
+            width: 193px;
+            height: 156px;
+            position: relative;
+            top: 30px;
+        }
+        .Paje4 .left__box .Catalog__box-big .Catalog__boxName .boxName__wer {height: 55%;}
+          .Paje4 .left__box .Catalog__box-big .Catalog__boxName .boxName__nic {height: 55%;}
+          .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName .boxName__wer {
+          height:55%; }
+          .Paje4 .left__box .Catalog__box-big1 .Catalog__boxName .boxName__nic {
+  
+            height: 55%;
+          }
+          .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName .boxName__wer {
+
+            height: 55%;
+    }
+          .Paje4 .rigth__box .Catalog__box-big3 .Catalog__boxName .boxName__nic {
+            height: 55%;}
+            .Paje6 .Page6__textRight{
+                display: none;
+                }
+         
+        }
+        @media screen and (max-width: 500px){
+            #exampleModal{
+                width: 350px;
+                margin-left: 50px;
+            }
+        }
+        @media screen and (max-width: 430px){
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 16px;
+        } 
+        .offcanvas{
+        width: 100%;
+        }
+        .header__kolo{
+        display: none;
+        }
+        .header__text{
+        font-size: 24px ;
+        text-align: center;
+        margin: 30px;
+        }
+        .offcanvas-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50%;
+        padding-left: 5%;
+        }
+        .btn-close{
+        position: relative;
+        bottom: 200px;
+        }
+        .Paje2{
+            padding-right: 35px;
+        }
+        .Paje2{
+            height: 45vh;
+        }
+        footer .footer__right #staticBackdrop {
+            width: 350px;
+margin-left: 30px;
+margin-top: 200px;
+        }
+       
+            #exampleModal{
+                width: 350px;
+                margin-left: 25px;
+            }
+        
+        }
+        @media screen and (max-width: 400px){
+            .Paje2{
+                height: 45vh;
+            }
+            #exampleModal{
+                width: 350px;
+                margin-left: 15px;
+            }
+        }
+        @media screen and (max-width: 360px){
+            footer .footer__right #staticBackdrop {
+                width: 330px;
+                margin-left: 15px;
+                margin-top: 180px;
+            }
+            #exampleModal{
+                width: 350px;
+                margin-left: 6px;
+            }
+        .Paje1 .containerr .main .upprostred__main .text__main{
+        font-size: 14px;
+        } 
+        .header__text::after {
+        display: none;
+        }
+        .header__text:hover{
+        
+        filter: blur(1px);
+        }
+        .Paje6 .Paje6__textLeft {
+            text-align: center;
+            }
+        }
+        @media screen and (max-width: 320px){
+            #exampleModal{
+                width: 300px;
+             
+            }
+        }
+
+                .header__text::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgb(214, 235, 255);
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform .25s ease; }
+                    .header__text:hover::after {
+                        transform: scaleX(1); }
+                        a{
+                            text-decoration: none;
+                        }
+        
+        @keyframes phone {
+        0%{
+        position: relative;
+        top: 1px;
+        filter: hue-rotate(5deg);
+        }   
+        5%{
+        position: relative;
+        top: 2px;
+        filter: hue-rotate(35deg);
+        
+        }   
+        10%{
+        position: relative;
+        bottom: 1px;
+        filter: hue-rotate(85deg);
+        
+        }   
+        15%{
+        position: relative;
+        bottom: 2px;
+        filter: hue-rotate(205deg);
+        
+        }  
+        100%{ 
+        filter: hue-rotate(360deg);
+        }
+        
+        
+        }
+        
+        ::-webkit-scrollbar {
+            width: 14px;
+        }
+        
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, rgba(69,173,255,1) 0%, rgba(11,116,218,1) 100%);
+            border-radius: 10px 0px 10px 0px;
+            -webkit-border-radius:  10px 0px 10px 0px;
+            -moz-border-radius:  10px 0px 10px 0px;
+            -ms-border-radius:10px 0px 10px 0px ;
+            -o-border-radius: 10px 0px 10px 0px;
+            
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f4fae;
+        }
