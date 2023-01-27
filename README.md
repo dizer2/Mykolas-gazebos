@@ -12,4 +12,4 @@
 
 ---
 
-https://dizer2.github.io/Meta/
+https://mykolas-gazebos.netlify.app/
